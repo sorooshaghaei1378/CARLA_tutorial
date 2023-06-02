@@ -24,7 +24,7 @@ if __name__ == "__main__":
     imu_sensor.listen(lambda imu: simulator_handler.imu_callback(imu))
     gnss_sensor.listen(lambda gnss: simulator_handler.gnss_callback(gnss))
     VehicleCommand(throttle=1.0).send_control(simulator_handler.vehicle)
-    time.sleep(20.0)
+   
 
 
 
